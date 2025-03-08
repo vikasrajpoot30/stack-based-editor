@@ -1,4 +1,4 @@
-class stack {
+ export class Stack {
 
     constructor(){
         this.size=0;
