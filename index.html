@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Editor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack Editor</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-light">
-        <span class="navbar-brand">Stack Editor</span>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light">
+    <span class="navbar-brand">Stack Editor</span>
+  </nav>
 
-    <!-- Main Container -->
-    <div id="container">
-        <!-- Text Input Box -->
-        <div class="text-box">
-            <h3>Type Below</h3>
-            <textarea class="form-control" id="comment"></textarea>
-        </div>
-
-        <!-- Output Box -->
-        <div class="text-box">
-            <h3>Output</h3>
-            <span id="temptext">LIFO REAL WORLD EXAMPLE</span>
-        </div>
+  <!-- Main Container -->
+  <div id="container">
+    <!-- Text Input Box -->
+    <div class="text-box">
+      <h3>Type Below</h3>
+      <textarea class="form-control" id="comment"></textarea>
     </div>
 
-    <!-- Buttons -->
-    <div id="button-container">
-        <button type="button" class="btn btn-primary" id="undo">Undo</button>
-        <button type="button" class="btn btn-danger" id="clear">Reset</button>
+    <!-- Output Box -->
+    <div class="text-box">
+      <h3>Output</h3>
+      <span id="temptext">LIFO REAL WORLD EXAMPLE</span>
     </div>
 
-    <script type="module" src="stack.js"></script>
-    <script type="module" src="script.js"></script>
+    <!-- Stack Visualization Box -->
+    <div class="text-box" id="stackContainer">
+      <h3>Stack Visualization</h3>
+      <div id="stackVisual"></div>
+    </div>
+  </div>
 
+  <!-- Buttons -->
+  <div id="button-container">
+    <button type="button" class="btn btn-primary" id="undo">Undo</button>
+    <button type="button" class="btn btn-danger" id="clear">Reset</button>
+  </div>
+
+  <script type="module" src="stack.js"></script>
+  <script type="module" src="script.js"></script>
+  
 </body>
 </html>

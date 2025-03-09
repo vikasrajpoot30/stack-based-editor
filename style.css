@@ -6,30 +6,31 @@ html, body {
     font-family: 'Poppins', sans-serif;
     background-color: #e5ddd5; /* WhatsApp's chat background */
     color: #333;
-}
-
-/* Navbar */
-.navbar {
+  }
+  
+  /* Navbar */
+  .navbar {
     background: linear-gradient(135deg, #128C7E, #25D366); /* WhatsApp Green */
     padding: 15px;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     color: white;
-}
-
-/* Container */
-#container {
+  }
+  
+  /* Container */
+  #container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     margin-top: 20px;
-}
-
-/* Text Box */
-.text-box {
+  }
+  
+  /* Text Box */
+  .text-box {
     width: 45%;
     height: 300px;
     border-radius: 10px;
@@ -40,10 +41,10 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* Textarea */
-#comment {
+  }
+  
+  /* Textarea */
+  #comment {
     width: 100%;
     height: 80%;
     background-color: #d9fdd3; /* Light green like WhatsApp message box */
@@ -53,16 +54,16 @@ html, body {
     border-radius: 5px;
     resize: none;
     font-size: 16px;
-}
-
-#comment:focus {
+  }
+  
+  #comment:focus {
     outline: none;
     border-color: #128C7E;
     box-shadow: 0px 0px 10px rgba(18, 140, 126, 0.4);
-}
-
-/* Output Box */
-#temptext {
+  }
+  
+  /* Output Box */
+  #temptext {
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -71,33 +72,70 @@ html, body {
     overflow-y: auto;
     max-height: 250px;
     color: #128C7E;
-}
-
-/* Buttons */
-#button-container {
+  }
+  
+  /* Buttons */
+  #button-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-}
-
-.btn {
+  }
+  
+  .btn {
     padding: 12px 20px;
     font-size: 18px;
     border-radius: 5px;
     transition: all 0.3s ease;
     border: none;
     color: white;
-}
-
-.btn-primary {
+  }
+  
+  .btn-primary {
     background: linear-gradient(135deg, #25D366, #128C7E); /* WhatsApp Green */
-}
-
-.btn-danger {
+  }
+  
+  .btn-danger {
     background: linear-gradient(135deg, #FF3B30, #FF6B6B); /* Red for delete */
-}
-
-.btn:hover {
+  }
+  
+  .btn:hover {
     opacity: 0.9;
-}
+  }
+  
+  /* Stack Visualization Box */
+  #stackContainer {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #stackContainer h3 {
+    margin-bottom: 10px;
+  }
+  
+  #stackVisual {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse; /* Top of stack appears at the top */
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .stack-item {
+    background-color: #25D366;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
