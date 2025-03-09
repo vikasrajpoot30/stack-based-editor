@@ -64,4 +64,3 @@ This technical documentation provides an in-depth explanation of the mechanisms 
 
 ---
 
-Feel free to modify and expand this documentation as your project evolves!
